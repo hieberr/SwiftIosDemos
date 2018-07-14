@@ -2,14 +2,13 @@
 //  ImageCell.swift
 //  SwiftDemosIos
 //
-//  Created by floatingpoint on 6/25/18.
+//  Created by floatingpoint on 7/12/18.
 //  Copyright © 2018 HologramPacific. All rights reserved.
 //
-
 import Foundation
 import UIKit
 
-class ImageCell : UITableViewCell {
+class CollectionViewImageCell : UICollectionViewCell {
     @IBOutlet weak var backgroudImage: UIImageView!
     @IBOutlet weak var label: UILabel!
     
@@ -25,10 +24,6 @@ class ImageCell : UITableViewCell {
     }
     
     public func setBackgroundImage(_ image: UIImage) {
-        let tintColor = UIColor.black.withAlphaComponent(0.9)
-        backgroudImage.tintColor = tintColor
         backgroudImage.image = image
-        
-
     }
 }

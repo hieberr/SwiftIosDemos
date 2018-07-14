@@ -60,6 +60,26 @@
                                             <segue destination="6CM-gO-3dz" kind="show" id="B5B-CY-GX0"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="liA-zc-K6L" style="IBUITableViewCellStyleDefault" id="35X-8Q-ApN">
+                                        <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="35X-8Q-ApN" id="UNV-8e-qX5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="UICollectionView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="liA-zc-K6L">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="YKg-Cp-Qe1" kind="show" id="pfh-8f-t6z"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Advanced Demos" id="0k2-1x-PKL">
@@ -83,7 +103,15 @@
                 <viewControllerPlaceholder storyboardIdentifier="TableViewDemoStoryboard" storyboardName="TableViewDemo" id="6CM-gO-3dz" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hoK-4a-sAi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="810" y="374"/>
+            <point key="canvasLocation" x="1288" y="-795"/>
+        </scene>
+        <!--UICollectionViewDemo-->
+        <scene sceneID="AHM-FJ-yBR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UICollectionViewDemo" id="YKg-Cp-Qe1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5bJ-lB-XnT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248" y="-588"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ssp-7l-tLz">

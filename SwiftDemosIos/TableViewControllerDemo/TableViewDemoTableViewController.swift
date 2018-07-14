@@ -11,7 +11,6 @@ import UIKit
 
 class TableViewDemoTableViewController : UITableViewController {
 
-    let plantGroups = ["Roses", "Bromeliads", "Orchids", "Mosses"]
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -22,7 +21,7 @@ class TableViewDemoTableViewController : UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ImageCell", for: indexPath)
-        guard let imageCell : ImageCell = cell as? ImageCell else {
+        guard let imageCell : TableViewImageCell = cell as? TableViewImageCell else {
             print("Error: couldn't cast as ImageCell.")
             return cell
         }
@@ -34,6 +33,8 @@ class TableViewDemoTableViewController : UITableViewController {
         imageCell.title = plantGroup
         if let image = UIImage(named: plantGroup) {
             imageCell.setBackgroundImage(image)
+        }else {
+            print("Couldn't load image")
         }
         
         return imageCell
